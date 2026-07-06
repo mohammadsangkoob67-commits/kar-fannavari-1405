@@ -1,20 +1,17 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient( green, blue);
+    background: linear-gradient(lightblue);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .bala {
     border-top-left-radius: 1cm;
     border-top-right-radius: 1cm;
-    margin: 30px 10px 0 10px;
+    margin: 20px 10px 0 10px;
     padding: 10px;
     background: lightcoral;
-    font-size:xx-large;
-}
-
-p {
+    font-size:x-large;
     text-align: center;
 }
 
@@ -23,25 +20,28 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
     margin: 0 10px 0 10px;
-    padding: 30px;
+    padding: 20px;
     background: lightgreen;
 }
 
 .vasat img {
-    max-width: 100%;
-    height: auto;
+    max-width: 80%;
+    border-radius:15px;
 }
 
-.b1, .b2, .b3, .b4 {
-    min-height: 350px;
+.card {
     text-align: center;
+    transition:.3s;
+}
 
+.card:hover{
+transform:translateY(-15px);
 }
 
 .payin {
     border-bottom-left-radius: 1cm;
     border-bottom-right-radius: 1cm;
-    margin: 0 10px 30px 10px;
+    margin: 0 10px 20px 10px;
     padding: 1px;
     background: rgb(238, 240, 239);
     text-align: center;
@@ -51,16 +51,7 @@ p {
 @media (max-width:600px){
 .vasat{
 grid-template-columns:repeat(2,1fr);
-gap:12px;
+gap:10px;
 padding:10px;
-}
-
-.b1, .b2, .b3, .b4{
-padding:10px;
-}
-
-.b1 img, .b2 img, .b3 img, .b4 img {
-width:100%;
-height:auto;
 }
 }
