@@ -38,6 +38,10 @@ body {
 transform:translateY(-15px);
 }
 
+.python img, .html img, .hoosh img{
+    max-width: 60%;
+}
+
 .payin {
     border-bottom-left-radius: 1cm;
     border-bottom-right-radius: 1cm;
